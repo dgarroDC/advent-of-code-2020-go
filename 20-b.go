@@ -51,12 +51,6 @@ func rotate(image []string) []string {
 	return newImage
 }
 
-func printImage(image []string) {
-	for _, row := range image {
-		fmt.Println(row)
-	}
-}
-
 func rotateBorders(borders *[]string) {
 	*borders = []string{reverse((*borders)[3]), (*borders)[0], reverse((*borders)[1]), (*borders)[2]}
 }
