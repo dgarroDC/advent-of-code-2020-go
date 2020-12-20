@@ -49,34 +49,3 @@ func eval(line string, i *int, par bool) int {
 	}
 	return res
 }
-
-
-//func eval(line string, i *int) int {
-//	var first int
-//	if line[*i] == '(' {
-//		*i++
-//		first = eval(line, i)
-//	} else {
-//		first, _ = strconv.Atoi(line[*i:*i+1])
-//		*i++
-//	}
-//	if *i == len(line) {
-//		return first
-//	} else {
-//		c := line[*i]
-//		*i++
-//		if c == ')' {
-//			return first
-//		} else {
-//			second := eval(line, i)
-//			if c == '+' {
-//				return first + second
-//			} else {
-//				return first * second
-//			}
-//		}
-//	}
-//
-//}
-
-// (1 + 1 * (1 * 1)) + 1
